@@ -3,9 +3,10 @@ class TextRender < Padrino::Application
 
   disable :sessions
   disable :flash
-  # disable :logging
-  set :logging, false
+  disable :logging
+  disable :padrino_logging
   disable :static
   disable :method_override
   disable :show_exceptions
+  disable :reload
 end
